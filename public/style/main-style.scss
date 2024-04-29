@@ -1,0 +1,75 @@
+.clear {
+    background-image: url('https://th.bing.com/th/id/OIP.Gbm45_B1QLUJMWwmHTvZGgHaD4?rs=1&pid=ImgDetMain');
+}
+
+.clouds {
+    background-image: url('https://th.bing.com/th/id/R.a03d035fb13fa91843ccb0a053399d5f?rik=OPOhz7whMgv8Fw&pid=ImgRaw&r=0');
+}
+
+.rain {
+    background-image: url('https://th.bing.com/th/id/R.25d92a37e9a7cd6f901f9d617a0edc94?rik=9ThRVV%2fOijJYLg&riu=http%3a%2f%2fsenego.com%2fwp-content%2fuploads%2f2015%2f09%2fpluie.jpg&ehk=Z3FH4yEu2z0zfFJpcKhRsJL6BnYsiChQNrfd2tDnio0%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.snow {
+    background-image: url('https://th.bing.com/th/id/R.a599f7697c370210e637c7c90b2ce297?rik=CYDD5Tl2gUVGXA&riu=http%3a%2f%2fleschansonsdejm.l.e.pic.centerblog.net%2fo%2f1416f3ad.jpg&ehk=v1zfxNFrcdPkDVHfhRoq%2bqxgRH3thOo4p6CYuiQ02y0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1');
+}
+
+body {
+    font-family: 'Trebuchet MS';
+    height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+
+    main {
+        height: 75%;
+        padding-top: 100px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+
+
+        h2 {
+            font-size: 2em;
+        }
+
+        i {
+            font-size: 5em;
+
+            .wi {
+
+                line-height: 3em;
+            }
+        }
+
+
+
+    }
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 10;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    transition: opacity .3s, top .5s;
+}
+
+h1:hover {
+    .tooltip {
+        top: 100px;
+        opacity: 1;
+    }
+}
