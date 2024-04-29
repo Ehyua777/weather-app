@@ -35,7 +35,7 @@ async function main(withIP = true) {
     if (withIP) {
         // 1) recuperer l'adresse IP du terminal qui accède à la page avec l'API:
         // https://api.ipify.org?format=json
-        ip = await fetch('https://api.ipify.org?format=json')
+        ip = await fetch('http://api.ipify.org?format=json')
             .then(result => result.json())
             .then(json => json.ip)
         console.log(ip)
