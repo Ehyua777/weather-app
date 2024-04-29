@@ -38,14 +38,14 @@ async function main(withIP = true) {
         ip = await fetch('http://api.ipify.org?format=json')
             .then(result => result.json())
             .then(json => json.ip)
-        console.log(ip)
+        //console.log(ip)
 
         // 2) recuperer la ville de l'utilisateur à partir avec l'API:
         // https://freegeoip.net/json+ip
         ville = await fetch(`http://ip-api.com/json/${ip}`)
             .then(result => result.json())
             .then(json => json.city)
-        console.log(ville)
+        //console.log(ville)
     }
     else {
         ville = document.querySelector('#ville').textContent;
