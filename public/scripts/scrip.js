@@ -35,14 +35,14 @@ async function main(withIP = true) {
     if (withIP) {
         // 1) recuperer l'adresse IP du terminal qui accède à la page avec l'API:
         // https://api.ipify.org?format=json
-        ip = await fetch('https://api.ipify.org?format=json')
+        ip = await fetch('https://ipinfo.io/json')
             .then(result => result.json())
             .then(json => json.ip)
         console.log(ip)
 
         // 2) recuperer la ville de l'utilisateur à partir avec l'API:
         // https://freegeoip.net/json+ip
-        ville = await fetch(`https://ip-api.com/json/${ip}`)
+        ville = await fetch(`https://ipinfo.io/${ip}?token=9a00aae418f782`)
             .then(result => result.json())
             .then(json => json.city)
         console.log(ville)
