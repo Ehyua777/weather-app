@@ -45,7 +45,7 @@ async function main(withIP = true) {
         ville = await fetch(`https://ip-api.com/json/${ip}`)
             .then(result => result.json())
             .then(json => json.city)
-        //console.log(ville)
+        console.log(ville)
     }
     else {
         ville = document.querySelector('#ville').textContent;
